@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Happy Birthday Shivanshu</title>
+    <title>Happy Birthday félix</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/css/index.css" />
@@ -9,8 +9,8 @@
   <body>
     <div class="first--slide">
       <div class="slide--content">
-        <h1>hello</h1>
-        <h2>Shivanshu Mathur</h2>
+        <h1>salut</h1>
+        <h2>félix</h2>
         <span class="top"></span>
         <span class="right"></span>
         <span class="bottom"></span>
@@ -18,16 +18,16 @@
       </div>
 
       <div class="slide--content--one">
-        <h1 class="first">today</h1>
-        <h2 class="first">is</h2>
-        <h2 class="second">your</h2>
-        <h1 class="second">special day</h1>
+        <h1 class="first">aujourd'hui</h1>
+        <h2 class="first">c'est</h2>
+        <h2 class="second">ta</h2>
+        <h1 class="second">journée !</h1>
         <div class="circle--stuff">
           <svg
             viewBox="0 0 288 48"
             width="288"
             height="48"
-            style="overflow: visible;"
+            style="overflow: visible"
           >
             <g transform="translate(144 0)">
               <g transform="translate(-276.566 421.129)">
@@ -1914,7 +1914,7 @@
                 begin="DOMNodeInserted"
               ></animate>
             </g>
-            <g opacity="0" style="transition: opacity 0.5s ease-out;">
+            <g opacity="0" style="transition: opacity 0.5s ease-out">
               <path
                 fill="#FFC107"
                 d="M126.099 11.24l5 8.661 8.66-5-5-8.66z"
@@ -1972,8 +1972,8 @@
 
     <div class="second--canvas">
       <div class="content">
-        <h2>let's</h2>
-        <h2>celebrate</h2>
+        <h2>Nous te</h2>
+        <h2>souhaitons</h2>
       </div>
       <div class="canvas--remove"></div>
     </div>
@@ -1984,20 +1984,70 @@
         <img src="src/images/amusement-park.png" alt="" id="b2" />
       </div>
       <div class="center--line">
-        <img src="src/images/balloons.png" id="bl--right" alt="" />
-        <img src="src/images/balloons.png" id="bl--left" alt="" />
-        <h1>
-          <span>h</span><span>a</span><span>p</span><span>p</span
-          ><span>y</span> <span>b</span><span>i</span><span>r</span
-          ><span>t</span><span>h</span><span>d</span><span>a</span
-          ><span>y</span>
+        <!-- <img src="src/images/balloons.png" id="bl--right" alt="" />
+        <img src="src/images/balloons.png" id="bl--left" alt="" /> -->
+        <h1 style="text-align: center; top: 50%" id="title">
+          <span>Joyeux</span>
+          <span
+            >anniversaire ! <br />
+            <p style="font-size: 1rem">Ouvre tes cadeaux</p></span
+          >
         </h1>
       </div>
-      <img src="src/images/gift.png" alt="" id="gf1" />
-      <img src="src/images/gift.png" alt="" id="gf2" />
-      <img src="src/images/gift.png" alt="" id="gf3" />
+      <canvas id="confetti-canvas"></canvas>
+      <img src="src/images/gift.png" class="openModal" alt="" id="gf1" />
+      <!-- <img src="src/images/gift.png" class="openModal" alt="" id="gf2" />
+      <img src="src/images/gift.png" class="openModal" alt="" id="gf3" /> -->
+      <div class="modal" id="modal">
+        <img
+          style="margin-top: 10vh"
+          class="modal-content"
+          id="modalImg"
+          src="https://www.fnacspectacles.com/obj/mam/france/d8/8f/tiakola-tourn-e-new-tickets_329546_2843961_222x222.jpg"
+          alt="Image modale"
+        />
+
+        <h2 style="margin-top: 50px; color: white; text-align: center">
+          Concert de TIAKOLA
+        </h2>
+
+        <h4 style="margin-top: 50px; color: white; text-align: center">
+          Mais pas seulement ...
+        </h4>
+      </div>
     </div>
 
     <script src="src/js/index.js"></script>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script type="text/javascript">
+      const btn = document.querySelector(".openModal");
+      const canvas = document.querySelector("#confetti-canvas");
+      function onButtonClick() {
+        var myConfetti = confetti.create(canvas, {
+          resize: true,
+          useWorker: true,
+        });
+        myConfetti({
+          particleCount: 400,
+          spread: 160,
+        });
+      }
+      btn.addEventListener("click", onButtonClick);
+    </script>
+
+    <!-- CSS -->
+    <style>
+      #confetti-canvas {
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        pointer-events: none;
+      }
+    </style>
   </body>
 </html>
