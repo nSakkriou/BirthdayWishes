@@ -61,7 +61,7 @@ html {
 .first--slide .slide--content h1 {
   position: relative;
   animation: firstSlideTextOne 500ms ease 0s 1 forwards;
-  font-size: 2.7rem;
+  font-size: 2.2rem;
   margin: 0;
   line-height: 1.2em;
   opacity: 0;
@@ -71,7 +71,7 @@ html {
 .first--slide .slide--content h2 {
   position: relative;
   color: #fcbb5e;
-  font-size: 2.7rem;
+  font-size: 2.2rem;
   line-height: 1em;
   margin: 0;
   top: -1.6em;
@@ -236,30 +236,30 @@ html {
 }
 
 .slide--content--one h1.first {
-  font-size: 2.7rem;
+  font-size: 2.2rem;
   opacity: 0;
   transform: rotate(-180deg) scale(0);
   animation: secondSlideTextOne 500ms ease 0s 1 forwards;
 }
 
 .slide--content--one h2.first {
-  font-size: 2.7rem;
+  font-size: 2.2rem;
   transform: scale(0);
   opacity: 0;
   animation: secondSlideTextTwo 300ms ease 490ms 1 forwards;
 }
 
 .slide--content--one h2.second {
-  font-size: 2.7rem;
+  font-size: 2.2rem;
   transform: scale(0);
   opacity: 0;
   animation: secondSlideTextThree 200ms ease 1000ms 1 forwards;
 }
 
 .slide--content--one h1.second {
-  top: 2.7rem;
+  top: 2.2rem;
   color: #fcbb5e;
-  font-size: 2.7rem;
+  font-size: 2.2rem;
   opacity: 0;
   animation: secondSlideTextFour 300ms ease 1200ms 1 forwards;
 }
@@ -400,7 +400,7 @@ html {
 .second--canvas .content h2 {
   position: relative;
   margin: 0;
-  font-size: 2.7rem;
+  font-size: 2.2rem;
 }
 
 .second--canvas .content h2:nth-child(1) {
@@ -626,7 +626,7 @@ html {
   color: #1080f2;
   text-transform: uppercase;
   margin: 0;
-  font-size: 2.7rem;
+  font-size: 2.2rem;
 }
 
 .third--canvas .center--line h1 {
